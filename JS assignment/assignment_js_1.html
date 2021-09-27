@@ -1,0 +1,43 @@
+
+<html>
+<head>
+	<title>assignment_javascript</title>
+	<script type="text/javascript">
+		 var myNumber =4;
+		 var myBoolean = false;
+		 var myString = "variables are greater. ";
+		 var myNumber2 = new Array (42,4,45,46);
+	     var myString2 = ["What","is","the"," meaning","of", "life?"];
+	     var myBoolean2 = [true,false];
+	     var firstname="chirag";
+	     var lastname="rao";
+	     var fullname=firstname+" "+lastname;
+	     var myVariable = 24;
+	     var meaningofLife= 2*myVariable;
+
+	     Array.prototype.displayItems=function(){
+          for (i=0;i<this.length;i++){
+               document.write(this[i] + "<br />");
+}
+}        
+         document.write("multiplied"+meaningofLife+"<br/>");
+         document.write("fullname:"+fullname+"<br/>");
+		 document.write("My number is :" + myNumber + "<br/>");
+		 document.write("My boolean is :"+myBoolean+"<br/>");
+		 document.write("My string is :"+myString+"<br/>");
+		 document.write("the array of number:</br/");
+		 myNumber2.displayItems();
+         document.write("the array of strings:</br/");
+		myString2.displayItems();
+		document.write("the array of boolean:</br/");
+		myBoolean2.displayItems();
+		document.write("<br />THE array after PUSH<br />");
+        myString2.push(42); myNumber2.displayItems();
+        document.write("")
+
+
+</script>
+<body>
+
+</body>
+</html>

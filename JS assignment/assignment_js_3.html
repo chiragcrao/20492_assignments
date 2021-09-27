@@ -1,0 +1,22 @@
+<html>
+<body>
+	<div id="div1">
+		<p id="p1">This is a paragraph.</p>
+		<p id="p2">This is will be removed.</p>
+		<button onclick="remove()">Remove</button><br>
+		<button onclick="addd()">Add</button><br>
+	</div>
+	<script >
+		function remove() {
+			var parent= document.getElementById('div1');
+			var child = document.getElementById('p2');
+			parent.removeChild(child);
+		}
+		function addd(){
+			var mainn = document.getElementById('div1');
+			var adddd= document.createElement("p3");
+			var node = document.createTextNode("This is added.");
+			mainn.appendChild(node);
+		}
+	</script>
+</body>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<title>Print form</title>
+  <head>  <script type="text/javascript">
+        function caps() { 
+    document.getElementById("upper").value = document.getElementById("lower").value.toUpperCase(); 
+} 
+    </script>
+    </head>
+<body>
+    <form >
+            lower case: <br>
+            <input type="text" id="lower" name="lower_case" onchange="caps()"/>
+            upper case:<br>
+            <input type="text" id="upper" name="upper_case">
+    </form>
+
+</body>
+</html>
